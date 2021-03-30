@@ -31,20 +31,27 @@
 
 O projeto consiste em ser um portal de noticias em formato de texto, sendo necessário uma assinatura mensal, para ter acesso completo.
 
-### Funcionalidades?
-
-- Em desenvolvimento
+Tendo sua autenticação no formato [OAuth do GitHub][url-oauth], os posts gerenciados pelo [Prismic][url-prismic], o controle de pagamento controlado pelo [Stripe][url-stripe] e a base de dados não relacional do [FaunaDB][url-fauna], o projeto foi construído sem possúir um servidor back-end!
 
 ## :art: O layout?
 
-- Em desenvolvimento
+O layout da aplicação foi construído baseado no protótipo disponível no [Figma][url-figma].
+![capa](.github/capa.png)
 
 ## :hammer: Ferramentas?
 
 O projeto utiliza as seguintes ferramentas
 
-- [TypeScript][url-ts]
-- [React][url-react]
+- [Next.js][url-next]
+  - [React.js][url-react]
+    - [React Icons][url-react-icons]
+  - [TypeScript][url-ts]
+  - [SASS][url-sass]
+  - [Next Auth][url-next-auth]
+- [Axios][url-axios]
+- [Stripe][url-stripe]
+- [Prismic][url-prismic]
+- [FaunaDB][url-fauna]
 
 ## :electric_plug: Como usar?
 
@@ -68,17 +75,45 @@ $ git clone https://github.com/LMThomaz/ignews
 No diretório raiz da aplicação, abra o terminal e execute:
 
 ```bash
-  # O comando irá instalar todas as dependências necessárias para o projeto execute
+  # Caso esteja usando yarn
   yarn
+
+  # Caso esteja usando npm
+  npm i
 ```
 
 ### :crystal_ball: Executar aplicação
 
+#### :computer: Versão desenvolvimento
+
 Após as dependências instaladas, execute:
 
 ```bash
-  # O comando irá executar o projeto em versão de desenvolvimento
+  # Caso esteja usando yarn
+  yarn dev
+
+  # Caso esteja usando npm
+  npm dev
+```
+
+#### :office: Versão produção
+
+Após as dependências instaladas, execute:
+
+```bash
+  # Caso esteja usando yarn
+  yarn build
+
+  #Após a geração do build
   yarn start
+```
+
+```bash
+  # Caso esteja usando npm
+  npm build
+
+  #Após a geração do build
+  npm start
 ```
 
 ---
@@ -115,13 +150,19 @@ Feito com 💜 por <a href="https://www.linkedin.com/in/leonardo-thomaz/" target
 </h4>
 
 [url-ts]: https://www.typescriptlang.org/
-[url-styled]: https://styled-components.com
+[url-figma]: https://www.figma.com/file/3qKkwsoACegxxTuIPxlq84/ig.news?node-id=3%3A7
+[url-oauth]: https://docs.github.com/pt/developers/apps/authorizing-oauth-apps
 [url-axios]: https://github.com/axios/axios
-[url-polished]: https://polished.js.org
+[url-next]: https://nextjs.org
+[url-prismic]: https://prismic.io
 [url-zip]: https://github.com/LMThomaz/ignews/archive/main.zip
 [url-node]: https://nodejs.org/
-[url-jserver]: https://github.com/typicode/json-server
+[url-stripe]: https://stripe.com/en-br
+[url-next-auth]: https://next-auth.js.org
+[url-fauna]: https://fauna.com
+[url-sass]: https://sass-lang.com
 [url-react]: https://reactjs.org/
+[url-react-icons]: https://react-icons.github.io/react-icons/
 [url-rocketseat]: https://rocketseat.com.br/
 [url-git]: https://git-scm.com/
 [url-vs]: https://code.visualstudio.com/
